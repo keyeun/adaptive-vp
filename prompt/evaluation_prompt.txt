@@ -1,0 +1,93 @@
+You are tasked with analyzing a nurse's response in a patient interaction. Follow these steps carefully:
+
+1. Review the patient profile:
+<patient_profile>
+{PATIENT_PROFILE}
+</patient_profile>
+
+2. Examine the conversation between the patient and the nurse:
+<conversation>
+{CONVERSATION}
+</conversation>
+
+3. Analyze the nurse's last response in the conversation, considering the patient's profile. Focus on the following aspects:
+
+4. Tone Assessment
+Evaluate whether the nurse's tone was calm and clear, while avoiding negative emotions such as contempt, frustration, anger, or anxiety. Use these guidelines:
+Calm:
+Evaluate whether the nurse's tone was calm. Assess if the nurse sufficiently suppressed contempt, frustration, anger, or anxiety.
+Clear:
+Evaluate whether the nurse's tone was clear. Assess if the nurse used clear sentences to reduce confusion or prevent escalation.
+
+5. Empathy Evaluation
+Analyze the nurse's level of empathy using the following scale:
+Level 6: Explicitly shares feelings or experiences.
+  e.g. "I remember feeling the same way when I went through something similar."
+Level 5: Confirms the patient's expressed emotion.
+	e.g. "I'm very sorry you're upset by what's happened."; "I see you're struggling."
+Level 4: Acknowledges the main issue and pursues it further.
+  e.g. "Tell me why this is important to you.", "That's upsetting to hear. Would you say more about that?"
+Level 3: Acknowledges the main issue without follow-up.
+  e.g. "I'm here to listen.", "That's a difficult situation to be in."
+Level 2: Implicit recognition of a secondary issue.
+  e.g. "Oh really? I didn't realize that.", "This is what I've heard you say so far."
+Level 1: Gives a backchannel response.
+  e.g. "Uh-huh.",  "I see."
+Level 0: Ignores or denies the patient's empathetic opportunity entirely. 
+  e.g. "You're overreacting; it's not that bad." Completely ignoring the patient's comment or changing the subject abruptly, e.g., "Anyway, let's move on to something else."
+
+6. De-escalation Techniques
+Evaluate whether the nurse applied the following de-escalation techniques:
+Autonomy:
+Did the nurse involve the patient in decision-making, offer options, or use techniques like seeking permission or providing emotional space?
+e.g. "We can proceed with either X or Y—what do you prefer?", "Would it be okay if we talk about this further after you've had a moment to think?"
+Limit-Setting:
+Did the nurse establish clear behavioral boundaries or explain consequences?
+e.g. "I understand you're upset, but I cannot allow yelling during this conversation.", "If this continues, I may need to step away for a moment until we can discuss this calmly."
+Problem-Solving and Reframing:
+Did the nurse clarify the issue, redirect focus, or encourage a broader perspective?
+e.g."It seems like you're feeling frustrated because you've been waiting for a long time—am I understanding that correctly?", "I know this feels overwhelming, but remember, your family is looking forward to seeing you healthy again."
+
+7. Prohibited Behaviors Check
+Determine if the nurse avoided the following mistakes:
+Premature Claims of Empathy: Avoid phrases like "I understand" unless fully justified.
+Invalidating Beliefs: Avoid dismissing the patient's feelings or beliefs as untrue.
+Dismissive Commands: Avoid phrases like "Calm down," which can escalate emotions.
+
+8. Present your analysis in the following format:
+<analysis>
+<tone>
+<calm>[Yes/No]</calm>
+<clear>[Yes/No]</clear>
+<explanation>[Your brief explanation in 1-2 sentences]</explanation>
+</tone>
+<empathy>
+<level>[0-6]</level>
+<explanation>[Your brief explanation in 1-2 sentences]</explanation>
+</empathy>
+<de_escalation>
+<autonomy>
+<used>[Yes/No]</used>
+<explanation>[Your brief explanation in 1-2 sentences]</explanation>
+</autonomy>
+<limit_setting>
+<used>[Yes/No]</used>
+<explanation>[Your brief explanation in 1-2 sentences]</explanation>
+</limit_setting>
+<problem_solving_and_reframing>
+<used>[Yes/No]</used>
+<explanation>[Your brief explanation in 1-2 sentences]</explanation>
+</problem_solving_and_reframing>
+</de_escalation>
+<prohibited_behaviors>
+<premature_empathy>[Yes/No]</premature_empathy>
+<invalidating_beliefs>[Yes/No]</invalidating_beliefs>
+<dismissive_commands>[Yes/No]</dismissive_commands>
+<explanation>[Your brief explanation in 1-2 sentences]</explanation>
+</prohibited_behaviors>
+</analysis>
+
+9. Final Instructions:
+- Be objective. Base your analysis solely on the provided patient profile and conversation.
+- Avoid assumptions or interpretations beyond what is explicitly stated or clearly implied.
+- Evaluate based on strict criteria.

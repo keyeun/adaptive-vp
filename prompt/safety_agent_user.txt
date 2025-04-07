@@ -1,0 +1,43 @@
+First, carefully review the following information: Carefully read the patient profile, communication direction, and the entire conversation.
+
+Patient Profile:
+<profile>
+{PROFILE}
+</profile>
+
+Communication Direction:
+<direction>
+{DIRECTION}
+</direction>
+
+Patient-Nurse Conversation:
+<conversation>
+{CONVERSATION}
+</conversation>
+
+Next, evaluate the patient's last utterance based on the following criteria:
+
+1. Consistency with Patient Profile
+2. Direction Adherence
+3. Training Effectiveness
+4. Nurse Safety Assurance
+
+Next, present your evaluation in the following format:
+<evaluation>
+<profile_alignment>
+<judge>True/False</judge>
+<explanation>[Brief assessment and justification in 1-2 sentences]</explanation>
+</profile_alignment>
+<direction_adherence>
+<judge>True/False</judge>
+<explanation>[Brief assessment and justification in 1-2 sentences]</explanation>
+</direction_adherence>
+<dialogue_effectiveness>
+<judge>True/False</judge>
+<explanation>[Brief assessment and justification in 1-2 sentences]</explanation>
+</dialogue_effectiveness>
+<nurse_safety>
+<judge>True/False</judge>
+<explanation>[Brief assessment and justification in 1-2 sentences]</explanation>
+</nurse_safety>
+</evaluation>
